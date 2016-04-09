@@ -61,3 +61,27 @@ jshint配置自定义依赖父深度为3的文件夹下.jshintrc文件的配置
 深度可言在SublimeLinter用户设置中设置"rc_search_limit": 3。
 
 新建一个无文件名文件的方法，比如新建".jshintrc"，就直接新建".jshintrc."，多了个"."就可以了
+
+## SublimeLinter-contrib-eslint
+
+JS/ES6/JSX等语法检测插件，较为强大
+
+依赖：eslint、babel-eslint，需要npm全局安装
+
+.eslintrc文件例子：
+
+{
+"env": {
+"browser": true,
+"node": true,
+"es6": true
+},
+"parser": "babel-eslint",
+"ecmaFeatures": {
+"jsx": true
+},
+"rules": {
+"semi": [2, "always"],
+"quotes": [2, "single"]
+}
+}
