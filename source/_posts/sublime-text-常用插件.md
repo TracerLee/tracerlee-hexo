@@ -66,7 +66,7 @@ jshint配置自定义依赖父深度为3的文件夹下.jshintrc文件的配置
 
 JS/ES6/JSX等语法检测插件，较为强大
 
-依赖：eslint、babel-eslint，需要npm全局安装
+依赖：[eslint](http://eslint.org/)、babel-eslint，需要npm全局安装
 
 .eslintrc文件例子：
 
