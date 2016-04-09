@@ -43,7 +43,6 @@ jshint配置自定义依赖父深度为3的文件夹下.jshintrc文件的配置
   "jquery": true,
   "globals": {
     "angular": false,
-    
     // For Jasmine
     "after"      : false,
     "afterEach"  : false,
