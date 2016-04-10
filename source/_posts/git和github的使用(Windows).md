@@ -26,4 +26,20 @@ tags: 工具
 * 修改，添加，提交
   * $ git add .
   * $ git commit -m "This is a message."
-  * $ git push origin master
+  * $ git push origin master -u
+
+
+## cli中文显示异常的问题
+![](http://ww1.sinaimg.cn/large/68731f4agw1f2s35eyguxj20fm06gmzi.jpg)
+
+如图“\345\270\270...”，其实是8进制表示法，但是对于我们的git使用很不友好，通过设置：
+
+```bash
+git config --global core.quotepath false
+```
+
+core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。
+
+## 参考资料
+
+* [git乱码解决方案汇总](http://zengrong.net/post/1249.htm)

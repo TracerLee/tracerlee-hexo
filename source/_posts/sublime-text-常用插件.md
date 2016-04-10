@@ -85,3 +85,11 @@ JS/ES6/JSX等语法检测插件，较为强大
 "quotes": [2, "single"]
 }
 }
+
+如果同时安装了eslint和jshint的话，在Sublimelinter设置中各自的@disable可以对其禁用，否则两个会同时检测语法。
+
+ESLint规则官方文档http://eslint.org/docs/rules/
+
+如图，每一个配置的代码中，注释说明了配置的名值对
+
+![](http://ww1.sinaimg.cn/large/68731f4agw1f2r03o3xuvj20lg04m3z4.jpg)
