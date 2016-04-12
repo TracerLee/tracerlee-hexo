@@ -24,67 +24,59 @@ SublimeLinter的JavaScript检测的扩展插件
 $ node i jshint -gd
 ```
 
+参考配置:
 
-
-jshint配置自定义依赖父深度为3的文件夹下.jshintrc文件的配置
-
+```json
 {
-  "asi": true,
-  "curly": true,
-  "immed": true,
-  "newcap": true,
-  "noarg": true,
-  "sub": true,
-  "boss": true,
-  "eqnull": true,
-  "trailing": true,
-  "undef": true,
-  "browser": true,
-  "jquery": true,
-  "globals": {
-    "angular": false,
-    // For Jasmine
-    "after"      : false,
-    "afterEach"  : false,
-    "before"     : false,
-    "beforeEach" : false,
-    "describe"   : false,
-    "expect"     : false,
-    "jasmine"    : false,
-    "module"     : false,
-    "spyOn"      : false,
-    "inject"     : false,
-    "it"         : false
-  }
+  "asi"      : true,
+  "browser"  : true,
+  "eqeqeq"   : false,
+  "-W041"    : false, // 这个可以忽略没有使用全等于的警告 
+  "eqnull"   : true,
+  "es3"      : true, // 默认是es3语法检测，若要开启es其他版本，删除此行并设置"esversion":6
+  "expr"     : true,
+  "jquery"   : true,
+  "latedef"  : true,
+  "laxbreak" : true,
+  "nonbsp"   : true,
+  "strict"   : true,
+  "undef"    : true,
+  "unused"   : true,
+  "devel"    : true // 忽略console,alert警告
 }
+```
 
-深度可言在SublimeLinter用户设置中设置"rc_search_limit": 3。
+jshint配置默认依赖父深度为3的文件夹下.jshintrc文件的配置。
 
-新建一个无文件名文件的方法，比如新建".jshintrc"，就直接新建".jshintrc."，多了个"."就可以了
+深度可在SublimeLinter用户设置中设置"rc_search_limit": 3。
+
+__新建一个无文件名文件__的方法，比如新建".jshintrc"，就直接新建".jshintrc."，多了个"."就可以了。
 
 ## SublimeLinter-contrib-eslint
 
-JS/ES6/JSX等语法检测插件，较为强大
+JS/ES6/JSX等语法检测插件，较为强大，缺点是速度比较慢
 
 依赖：[eslint](http://eslint.org/)、babel-eslint，需要npm全局安装
 
-.eslintrc文件例子：
+参考配置：
 
+```json
 {
-"env": {
-"browser": true,
-"node": true,
-"es6": true
-},
-"parser": "babel-eslint",
-"ecmaFeatures": {
-"jsx": true
-},
-"rules": {
-"semi": [2, "always"],
-"quotes": [2, "single"]
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"parser": "babel-eslint",
+	"ecmaFeatures": {
+		"jsx": true
+	},
+	"rules": {
+		"semi": [2, "always"],
+		"quotes": [2, "single"]
+	}
 }
-}
+```
 
 如果同时安装了eslint和jshint的话，在Sublimelinter设置中各自的@disable可以对其禁用，否则两个会同时检测语法。
 
