@@ -42,7 +42,11 @@ $ node i jshint -gd
   "strict"   : true,
   "undef"    : true,
   "unused"   : true,
-  "devel"    : true // 忽略console,alert警告
+  "devel"    : true, // 忽略console,alert警告
+  "global"   : {     // 全局变量忽略列表
+    "seajs"   : true,
+    "define"  : true
+  }   
 }
 ```
 
