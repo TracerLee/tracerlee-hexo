@@ -1,7 +1,7 @@
 ---
 title: 开始你的electron
 date: 2016-04-17 03:06:13
-tags: 工具
+tags: [工具,学习]
 ---
 
 使用electron开发桌面应用遇到的问题和tips记录。
