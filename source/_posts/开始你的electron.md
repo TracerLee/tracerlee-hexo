@@ -48,3 +48,16 @@ tags: [工具,学习]
 * 在electron应用内可以用`ctrl+r`刷新页面，在控制台里面可以用`f5`
 
   不过`electron-connect`使用的`reload`方法不能刷新页面
+
+* 应用打包
+
+  * ```bash
+    npm install electron-packager -g
+    ```
+
+  * ```bash
+    electron-packager ./ --platform=win32 --arch=x64
+    ```
+
+* ​
+
