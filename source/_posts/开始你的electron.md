@@ -54,10 +54,12 @@ tags: [工具,学习]
   * ```bash
     npm install electron-packager -g
     ```
+    ​
 
-  * ```bash
-    electron-packager ./ --platform=win32 --arch=x64
+  * 使用管理员cmd，否则可能打包不了
+    ```bash
+    electron-packager ./ --platform=win32 --arch=ia32
     ```
 
-* ​
+* ​研究一下怎么自定义一些选项（图标，asar，版本号，安装）
 
