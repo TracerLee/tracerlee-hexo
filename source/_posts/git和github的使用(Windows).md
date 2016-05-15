@@ -7,7 +7,7 @@ tags: 工具
 ## 安装 [git](https://git-scm.com/download/win)
 
 * Windows: 下载并安装[git](https://git-scm.com/download/win)
-* 安装过程一直选择下一步即可，个性化需求可自行配置
+* 安装过程一直选择下一步即可，个性化需求可自行配置<!-- more -->
 
 ## github配置
 

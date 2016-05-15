@@ -17,7 +17,7 @@ tags: [工具,Tips系列]
 $ npm install -g hexo-cli
 ```
 
-完成这个之后就可以愉快地使用hexo命令啦！
+<!-- more -->完成这个之后就可以愉快地使用hexo命令啦！
 
 ## 写作
 
@@ -90,8 +90,33 @@ $ hexo d
 hexo g -d
 ```
 
+## 个性化
+
+### 如何设置「阅读全文」？ 
+
+在首页显示一篇文章的部分内容，并提供一个链接跳转到全文页面是一个常见的需求。 NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 **阅读全文** 按钮，可以通过以下方法：
+
+1. 在文章中使用 `` 手动进行截断，Hexo 提供的方式 推荐
+
+2. 在文章的 [front-matter](https://hexo.io/docs/front-matter.html) 中添加 `description`，并提供文章摘录
+
+3. 自动形成摘要，在 主题配置文件 中添加：
+
+   ```
+   auto_excerpt:
+     enable: true
+     length: 150
+   ```
+
+   默认截取的长度为 `150` 字符，可以根据需要自行设定
+
+建议使用 `<!-- more -->`（即第一种方式），除了可以精确控制需要显示的摘录内容以外， 这种方式也可以让 Hexo 中的插件更好的识别。
+
+
+
 ## 参考资料
 
 * [Hexo官方中文文档](https://hexo.io/zh-cn/docs/)
 * [GitHub Pages 绑定来自阿里云的域名](http://quantumman.me/blog/setting-up-a-domain-with-gitHub-pages.html)
 * https://github.com/hexojs/hexo/issues/1146
+* [常见问题](http://theme-next.iissnan.com/faqs.html)

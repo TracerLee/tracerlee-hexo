@@ -16,7 +16,7 @@ sublime text之所以强大其中一个原因就是强大的插件支持，具�
 
 ## SublimeLinter-jshint 
 
-SublimeLinter的JavaScript检测的扩展插件
+SublimeLinter的JavaScript检测的扩展插件<!-- more -->
 
 依赖jshint，需要用node.js全局安装：
 

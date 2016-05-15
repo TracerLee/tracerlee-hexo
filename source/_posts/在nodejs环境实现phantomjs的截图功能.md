@@ -20,6 +20,8 @@ document.querySelector('button').onclick = function () {
 };
 ```
 
+<!-- more -->
+
 ```javascript
 // server-side
 let phInstance,sitepage,url="file:///C:/git/electron-quick-start/index.html",fname="./index.jpg";
