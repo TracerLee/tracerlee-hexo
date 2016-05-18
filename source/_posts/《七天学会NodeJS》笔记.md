@@ -262,7 +262,7 @@ function replace(pathname) {
 - 作为服务端使用时，创建一个HTTP服务器，监听HTTP客户端请求并返回响应。
 - 作为客户端使用时，发起一个HTTP客户端请求，获取服务端响应。
 
-```
+```javascript
 // 创建HTTP服务器
 http.createServer(function (request, response) {
     var body = [];
@@ -352,7 +352,7 @@ protocol     auth     hostname   port pathname     search     hash
 
 我们仍然回到JS是单线程运行的这个事实上，这决定了JS在执行完一段代码之前无法执行包括回调函数在内的别的代码。也就是说，即使平行线程完成工作了，通知JS主线程执行回调函数了，**回调函数也要等到JS主线程空闲时才能开始执行**。以下就是这么一个例子。
 
-```
+```javascript
 function heavyCompute(n) {
     var count = 0,
         i, j;
@@ -374,7 +374,6 @@ heavyCompute(50000);
 
 -- Console ------------------------------
 8520
-
 ```
 
 可以看到，本来应该在1秒后被调用的回调函数因为JS主线程忙于运行其它代码，实际执行时间被大幅延迟。
@@ -434,7 +433,7 @@ for (; i < len; ++i) {
 
 ##### 异常处理
 
-```
+```javascript
 function async(fn, callback) {
     // Code execution path breaks here.
     setTimeout(function ()　{
@@ -464,7 +463,7 @@ Error: object is not a function
 
 Node.js通过`process`对象提供了捕获全局异常的方法
 
-```
+```javascript
 process.on('uncaughtException', function (err) {
     console.log('Error: %s', err.message);
 });
@@ -479,7 +478,7 @@ Error: undefined is not a function
 
 使用`domain`模块创建一个子域（JS子运行环境）
 
-```
+```javascript
 function async(request, callback) {
     // Do something.
     asyncA(request, function (data) {
