@@ -28,22 +28,22 @@ $ node i jshint -gd
 
 ```json
 {
-  "asi"      : true,
-  "browser"  : true,
-  "eqeqeq"   : false,
+  "asi"      : true,  // 控制“缺少分号”的警告
+  "browser"  : true,  // 预定义全局变量
+  "eqeqeq"   : false, // 强制使用三等号
   "-W041"    : false, // 这个可以忽略没有使用全等于的警告 
-  "eqnull"   : true,
-  "es3"      : true, // 默认是es3语法检测，若要开启es其他版本，删除此行并设置"esversion":6
+  "eqnull"   : true,   
+  "es3"      : true,  // 默认是es3语法检测，若要开启es其他版本，删除此行并设置"esversion":6
   "expr"     : true,
-  "jquery"   : true,
-  "latedef"  : true,
+  "jquery"   : true,  // 定于全局变量
+  "latedef"  : true,  // 禁止定义之前使用变量，忽略 function 函数声明
   "laxbreak" : true,
   "nonbsp"   : true,
-  "strict"   : true,
-  "undef"    : true,
-  "unused"   : true,
-  "devel"    : true, // 忽略console,alert警告
-  "global"   : {     // 全局变量忽略列表
+  "strict"   : true,  // 严格模式
+  "undef"    : true,  // 变量未定义
+  "unused"   : true,  // 变量未使用
+  "devel"    : true,  // 忽略console,alert警告
+  "globals"   : {     // 全局变量忽略列表
     "seajs"   : true,
     "define"  : true
   }   

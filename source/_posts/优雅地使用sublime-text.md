@@ -6,35 +6,65 @@ tags:[Tips系列]
 
 ## 抛弃鼠标
 
+### 选择
+
 ctrl+d
 
-ctrl+c
-
-ctrl+g
-
-ctrl+r
-
-ctrl+w
-
-home & end
-
-ctrl+alt+m
-
-ctrl+shifit+1
-
-alt+shift+c
-
-f2
-
-ctrl+f2
+ctrl+alt+up/ctrl+alt+down
 
 f3
 
 alt+f3
 
-ctrl+方向键
+shift+f3
+
+ctrl+shift+a
+
+ctrl+shift+m
+
+ctrl+shift+space
 
 ctrl+l
+
+### 定位
+
+ctrl+p
+
+ctrl+g
+
+ctrl+r
+
+alt+-
+
+ctrl+1|2
+
+f2
+
+ctrl+f2
+
+home & end
+
+ctrl+方向键
+
+### 功能类
+
+ctrl+w
+
+ctrl+c
+
+ctrl+v
+
+alt+shift+c
+
+ctrl [+shift] +enter
+
+ctrl+shifit+1
+
+alt+shift+1|2|3
+
+ctrl+shift+up|down
+
+
 
 fn
 
@@ -42,8 +72,6 @@ fn
   * svn
   * ssjs
   * ...
-
-ctrl+alt+up/ctrl+alt+down
 
 
 
