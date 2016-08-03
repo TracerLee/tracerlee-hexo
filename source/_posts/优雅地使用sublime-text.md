@@ -1,7 +1,7 @@
 ---
 title: 优雅地使用sublime text
 date: 2016-05-24 11:57:00
-tags:[Tips系列]
+tags: Tips系列
 ---
 
 ## 抛弃鼠标
@@ -12,7 +12,7 @@ ctrl+d
 
 ctrl+alt+up/ctrl+alt+down
 
-f3
+f3<!-- more -->
 
 alt+f3
 
